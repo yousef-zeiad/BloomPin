@@ -58,7 +58,7 @@ As above but with repo update if any pod is out of date, such when you update an
 
 ## yarn start
 
-Run yarn start to Start the React-Native packager. You can optionally
+Run **`yarn start`** to Start the React-Native packager. You can optionally
 
 - **`yarn clear`** to start and reset cache of the bundler.
 
