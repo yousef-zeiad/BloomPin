@@ -10,6 +10,7 @@ React-native iOS / Android app
 [![Typescript](https://img.shields.io/badge/TypeScript-007ACC?style=flat&logo=typescript&logoColor=white)](https://github.com/microsoft/TypeScript)
 
 ## Table of Contents
+
 - [BloomPin](#bloompin)
   - [Table of Contents](#table-of-contents)
 - [Assets](#assets)
@@ -97,7 +98,6 @@ The design uses different components depending on the type of data. Here's a ref
 A Component that shows the numbers
 
 ```typescript
-
 export const NumberButton: React.FC<NumberPadProp> = ({ onPress, number }) => {
   return (
     <Container>
@@ -111,7 +111,6 @@ export const NumberButton: React.FC<NumberPadProp> = ({ onPress, number }) => {
     </Container>
   );
 };
-
 ```
 
 ## Shared

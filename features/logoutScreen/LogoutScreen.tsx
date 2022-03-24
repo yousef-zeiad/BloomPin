@@ -4,7 +4,7 @@ import OauthService from 'services/apis/OauthService';
 import { useAuthorization } from 'services/context/AuthProvider';
 import { Container, LogoutButton, LogoutTitle } from './LogoutStyled';
 
-export const HomeScreen: React.FC = () => {
+export const LogoutScreen: React.FC = () => {
   const { signOut } = useAuthorization();
   const logout = useMutation(() => OauthService.logout());
 

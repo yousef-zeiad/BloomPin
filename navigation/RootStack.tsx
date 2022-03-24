@@ -1,5 +1,5 @@
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import { HomeScreen, LockScreen } from 'features';
+import { LogoutScreen, LockScreen } from 'features';
 import React from 'react';
 import { useAuthorization } from 'services/context/AuthProvider';
 import { RootStackParamList } from '../types';
@@ -19,7 +19,7 @@ function RootStack() {
               options={{ headerShown: false, animationTypeForReplace: !user ? 'pop' : 'push' }}
             />
           ) : (
-            <Stack.Screen name='Home' component={HomeScreen} options={{ headerShown: false }} />
+            <Stack.Screen name='Logout' component={LogoutScreen} options={{ headerShown: false }} />
           )}
         </Stack.Navigator>
       )}
