@@ -1,22 +1,23 @@
 import { StatusBar } from 'expo-status-bar';
+import React from 'react';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
 
-import useCachedResources from './hooks/useCachedResources';
-import useColorScheme from './hooks/useColorScheme';
-import Navigation from './navigation';
+import Navigation from 'navigation';
+import { QueryClient, QueryClientProvider } from 'react-query';
+import { AuthProvider } from 'services/context/AuthProvider';
 
-export default function App() {
-  const isLoadingComplete = useCachedResources();
-  const colorScheme = useColorScheme();
+export const App: React.FC = () => {
+  const queryClient = new QueryClient();
+  return (
+    <SafeAreaProvider>
+      <QueryClientProvider client={queryClient} contextSharing>
+        <AuthProvider>
+          <Navigation />
+        </AuthProvider>
+      </QueryClientProvider>
+      <StatusBar />
+    </SafeAreaProvider>
+  );
+};
 
-  if (!isLoadingComplete) {
-    return null;
-  } else {
-    return (
-      <SafeAreaProvider>
-        <Navigation colorScheme={colorScheme} />
-        <StatusBar />
-      </SafeAreaProvider>
-    );
-  }
-}
+export default App;
