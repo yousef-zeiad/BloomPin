@@ -1,4 +1,4 @@
-import Colors from 'constants/Colors';
+import Colors from 'theme/Colors';
 import styled from 'styled-components/native';
 export const NumberPad = styled.TouchableOpacity`
   height: 70px;

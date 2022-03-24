@@ -3,7 +3,7 @@ import { ScrollView } from 'react-native';
 import styled from 'styled-components/native';
 
 import { SafeAreaView } from 'react-native-safe-area-context';
-import Colors from 'constants/Colors';
+import Colors from 'theme/Colors';
 
 const SafeViewContent = styled(SafeAreaView)<{ background?: string; paddingTop?: number }>`
   flex: 1;
