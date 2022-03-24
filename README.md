@@ -20,7 +20,6 @@ React-native iOS / Android app
 - [Integrations](#integrations)
   - [Expo](#expo)
   - [Styled Components](#styled-components)
-  - [React Native Shared Element](#react-native-shared-element)
   - [React Navigation](#react-navigation)
 - [Components](#components)
   - [NumberPad](#numberPad)
