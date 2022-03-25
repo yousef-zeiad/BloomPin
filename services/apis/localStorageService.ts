@@ -1,6 +1,6 @@
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
-const LocalStorageBasicService = (function () {
+const LocalStorageService = (function () {
   async function setToken(tokenObj: { token: string; refresh_token: string }) {
     try {
       await AsyncStorage.setItem('token', tokenObj.token);
@@ -35,4 +35,4 @@ const LocalStorageBasicService = (function () {
     clearToken,
   };
 })();
-export default LocalStorageBasicService;
+export default LocalStorageService;
